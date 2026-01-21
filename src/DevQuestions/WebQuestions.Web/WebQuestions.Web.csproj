@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.12" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\DevQuestion.Contracts.csproj" />
+    <ProjectReference Include="..\DevQuestions.Presenters\DevQuestions.Presenters.csproj" />
+    <ProjectReference Include="..\DevQuestions\DevQuestions.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
